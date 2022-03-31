@@ -22,8 +22,8 @@ $image.addEventListener("click", (e) => {
     image.style.top = `${e.clientY - 100}px`;
     image.id = index;
     imageList.push(index);
-    audio.play();
     document.body.appendChild(image);
+    audio.play();
     setTimeout(() => {
       document.getElementById(imageList[0]).remove();
       imageList = imageList.slice(1);
