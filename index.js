@@ -11,6 +11,7 @@ $file.addEventListener("change", () => {
 });
 imageList = [];
 index = 0;
+const audio = new Audio("./wow-.mp3")
 $image.addEventListener("click", (e) => {
   if (fileAdded) {
     index++;
@@ -21,6 +22,7 @@ $image.addEventListener("click", (e) => {
     image.style.top = `${e.clientY - 100}px`;
     image.id = index;
     imageList.push(index);
+    audio.play();
     document.body.appendChild(image);
     setTimeout(() => {
       document.getElementById(imageList[0]).remove();
