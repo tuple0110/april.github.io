@@ -12,7 +12,7 @@ $file.addEventListener("change", () => {
 imageList = [];
 index = 0;
 const audio = new Audio("./wow-.mp3")
-$image.addEventListener("click", (e) => {
+document.body.addEventListener("click", (e) => {
   if (fileAdded) {
     index++;
     image = new Image(300, 200);
